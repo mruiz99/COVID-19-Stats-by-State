@@ -59,7 +59,7 @@ In order to create a functioning Stats object, please keep in mind the following
     parameters will fail - last year cannot be greater than current year
     
 
-# Proper parameter examples for Stats object
+# Creating a proper Stats object
 
 Graph for the state of Maryland from June 2020 to January 2022
 
@@ -77,10 +77,19 @@ Graph for the state of California from October 2020 to February 2021
 
 CA = Stats(state = "CA", currmo = 2, lastmo = 10, curryear = 21, lastyear = 20)
 
-After successful creation of a Stats object, this can now be used to depict various graphs.  User must first create a Graph object using a Stats object attribute as the parameter.
-After creating the Graph object, user must call the getGraph() method and provide a valid parameter to depict a specific graph.  A list of graph options are printed to the console after successful execution of the graphing method.  
+After a successful creation of a Stats object, it can now be used to depict various graphs.  User must first create a Graph object using a Stats object attribute named 'allstats' as the parameter.
 
-getGraph() parameter options...
+# Creating a proper Graph object
+
+mdGraph = Graph(MD.allstats)
+
+nyGraph = Graph(NY.allstats)
+
+flGraph = Graph(FL.allstats)
+
+caGraph = Graph(CA.allstats)
+
+After creating the Graph object, user must call the getGraph() method and provide a valid parameter to depict a specific graph.  A list of graph options are printed to the console after successful execution of the graphing method.  
 
 "info":  depicts statistics, number of cases and deaths per day as a line graph
 
@@ -94,18 +103,7 @@ getGraph() parameter options...
 
 "vax":  depicts all US states, full vaccination rates for each state as of the present day*
 
-* All charts are shown in descending order
-
-# Proper parameter examples for Graph object
-
-mdGraph = Graph(MD.allstats)
-
-nyGraph = Graph(NY.allstats)
-
-flGraph = Graph(FL.allstats)
-
-caGraph = Graph(CA.allstats)
-
+*  All charts are shown in descending order
 
 mdGraph.getGraph("monthly")
 
