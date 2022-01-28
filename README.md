@@ -6,13 +6,18 @@ Each object also provides statistics in the form of printed text once successful
 
 Two classes Stats and Graph are used to extract, transform, and organize data to display graphs for COVID-19 data.
 
-User must first create a Stats object with the following required parameters: 'state', 'currmo', 'lastmo' 
+User must first create a Stats object with the following required parameters: 'state', 'currmo', 'lastmo'
+
 'state' represents a US state which will need to be entered using abbreviation (capitalized)
+
 'currmo' represents current month
+
 'lastmo' represents last month
 
 Default values for 'curryear' and 'lastyear' are 22, which represent the year 2022
+
 'curryear' represents current year
+
 'lastyear' represents last year
 
 Values for months and years are whole integers.
