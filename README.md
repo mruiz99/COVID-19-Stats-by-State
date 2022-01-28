@@ -23,7 +23,7 @@ Default values for 'curryear' and 'lastyear' are 22, which represent the year 20
 Values for months and years are whole integers.
 
 In order to create a functioning Stats object, please keep in mind the following pseudocode:
-
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
   if current year is equal to last year:
 
     if current month is equal to last month:
@@ -37,7 +37,6 @@ In order to create a functioning Stats object, please keep in mind the following
     else
     
       parameters will fail - last month cannot be greater than current month!
-      
 
   else if current year is greater than last year:
 
@@ -53,11 +52,11 @@ In order to create a functioning Stats object, please keep in mind the following
     
       parameters will pass!
       
-
+      
   else
   
     parameters will fail - last year cannot be greater than current year
-    
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 # Creating a proper Stats object
 
@@ -65,13 +64,16 @@ Graph for the state of Maryland from June 2020 to January 2022
 
 MD = Stats(state = "MD", currmo = 6, lastmo = 1, curryear = 22, lastyear = 20)
 
+
 Graph for the state of New York for September 2021
 
 NY = Stats(state = "NY", currmo = 9, lastmo = 9, curryear = 21, lastyear = 21)
 
+
 Graph for the state of Florida for January 2022
 
 FL = Stats(state = "FL", currmo = 1, lastmo = 1)
+
 
 Graph for the state of California from October 2020 to February 2021
 
@@ -89,21 +91,23 @@ flGraph = Graph(FL.allstats)
 
 caGraph = Graph(CA.allstats)
 
+
 After creating the Graph object, user must call the getGraph() method and provide a valid parameter to depict a specific graph.  A list of graph options are printed to the console after successful execution of the graphing method.  
 
 "info":  depicts statistics, number of cases and deaths per day as a line graph
 
 "monthly":  depicts statistics, number of cases and deaths per month as a line graph
 
-"averages":  depicts all US states, average number of cases and deaths per day as a bar chart*
+"averages":  depicts all US states, average number of cases and deaths per day as a bar chart**
 
-"totals":  depicts all US states, total number of cases and deaths within the date range as a bar chart*
+"totals":  depicts all US states, total number of cases and deaths within the date range as a bar chart**
 
-"cfrir":  depicts all US states, case fatality ratio and incidence rates within the date range as a bar chart*
+"cfrir":  depicts all US states, case fatality ratio and incidence rates within the date range as a bar chart**
 
-"vax":  depicts all US states, full vaccination rates for each state as of the present day*
+"vax":  depicts all US states, full vaccination rates for each state as of the present day**
 
-*  All charts are shown in descending order
+**  All charts are shown in descending order
+
 
 mdGraph.getGraph("monthly")
 
