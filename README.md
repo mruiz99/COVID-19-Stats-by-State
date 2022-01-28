@@ -7,18 +7,20 @@ Each object also provides statistics in the form of printed text once successful
 Two classes Stats and Graph are used to extract, transform, and organize data to display graphs for COVID-19 data.
 
 User must first create a Stats object with the following required parameters: 'state', 'currmo', 'lastmo'
-
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 'state' represents a US state which will need to be entered using abbreviation (capitalized)
 
 'currmo' represents current month
 
 'lastmo' represents last month
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Default values for 'curryear' and 'lastyear' are 22, which represent the year 2022
-
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 'curryear' represents current year
 
 'lastyear' represents last year
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Values for months and years are whole integers.
 
@@ -61,28 +63,29 @@ In order to create a functioning Stats object, please keep in mind the following
 # Creating a proper Stats object
 
 Graph for the state of Maryland from June 2020 to January 2022
-
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 MD = Stats(state = "MD", currmo = 6, lastmo = 1, curryear = 22, lastyear = 20)
-
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Graph for the state of New York for September 2021
-
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 NY = Stats(state = "NY", currmo = 9, lastmo = 9, curryear = 21, lastyear = 21)
-
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Graph for the state of Florida for January 2022
-
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 FL = Stats(state = "FL", currmo = 1, lastmo = 1)
-
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Graph for the state of California from October 2020 to February 2021
-
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 CA = Stats(state = "CA", currmo = 2, lastmo = 10, curryear = 21, lastyear = 20)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 After a successful creation of a Stats object, it can now be used to depict various graphs.  User must first create a Graph object using a Stats object attribute named 'allstats' as the parameter.
 
 # Creating a proper Graph object
-
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 mdGraph = Graph(MD.allstats)
 
 nyGraph = Graph(NY.allstats)
@@ -90,10 +93,10 @@ nyGraph = Graph(NY.allstats)
 flGraph = Graph(FL.allstats)
 
 caGraph = Graph(CA.allstats)
-
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 After creating the Graph object, user must call the getGraph() method and provide a valid parameter to depict a specific graph.  A list of graph options are printed to the console after successful execution of the graphing method.  
-
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 "info":  depicts statistics, number of cases and deaths per day as a line graph
 
 "monthly":  depicts statistics, number of cases and deaths per month as a line graph
@@ -105,10 +108,10 @@ After creating the Graph object, user must call the getGraph() method and provid
 "cfrir":  depicts all US states, case fatality ratio and incidence rates within the date range as a bar chart**
 
 "vax":  depicts all US states, full vaccination rates for each state as of the present day**
-
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 **  All charts are shown in descending order
 
-
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 mdGraph.getGraph("monthly")
 
 nyGraph.getGraph("info")
@@ -116,6 +119,7 @@ nyGraph.getGraph("info")
 flGraph.getGraph("vax")
 
 caGraph.getGraph("averages")
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 # Requirements
 
