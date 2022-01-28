@@ -1,4 +1,4 @@
-# COVID-19-Stats-by-State
+# COVID-19 Stats by State
 
 ## UNDER CONSTRUCTION ##
 
