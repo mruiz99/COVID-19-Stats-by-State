@@ -107,7 +107,7 @@ After creating the Graph object, user must call the getGraph() method and provid
 
 "cfrir":  depicts all US states, case fatality ratio and incidence rates within the date range as a bar chart**
 
-"vax":  depicts all US states, full vaccination rates for each state as of the present day**
+"vax":  depicts all US states, full vaccination rates for each state and a number for the entire country as of the present day**
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 **  All charts are shown in descending order
 
