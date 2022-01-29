@@ -62,22 +62,22 @@ In order to create a functioning Stats object, please keep in mind the following
 
 # Creating a proper Stats object
 
-Graph for the state of Maryland from June 2020 to January 2022
+Stats object for the state of Maryland from June 2020 to January 2022
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 MD = Stats(state = "MD", currmo = 6, lastmo = 1, lastyear = 20)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Graph for the state of New York for September 2021
+Stats object for the state of New York for September 2021
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 NY = Stats(state = "NY", currmo = 9, lastmo = 9, curryear = 21, lastyear = 21)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Graph for the state of Florida for January 2022
+Stats object for the state of Florida for January 2022
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 FL = Stats(state = "FL", currmo = 1, lastmo = 1)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Graph for the state of California from October 2020 to February 2021
+Stats object for the state of California from October 2020 to February 2021
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 CA = Stats(state = "CA", currmo = 2, lastmo = 10, curryear = 21, lastyear = 20)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
