@@ -129,11 +129,11 @@ Jupyter Notebook
 
 https://jupyter.org/install
 
-See Jupyter Notebook file for the required imports, may need to install
+See Jupyter Notebook or Python files for the required imports, may need to install
 
 All COVID-19 data obtained from the following repository: https://github.com/nytimes/covid-19-data
 
-To receive most up to date information, clone repository, pull latest data, copy and paste 'us-states.csv' into this repository
+To receive the most up to date COVID data, clone repository, pull latest data, copy and paste 'us-states.csv' into this repository
 
 # Sources
 
