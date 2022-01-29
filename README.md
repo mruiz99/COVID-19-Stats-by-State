@@ -64,7 +64,7 @@ In order to create a functioning Stats object, please keep in mind the following
 
 Graph for the state of Maryland from June 2020 to January 2022
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-MD = Stats(state = "MD", currmo = 6, lastmo = 1, curryear = 22, lastyear = 20)
+MD = Stats(state = "MD", currmo = 6, lastmo = 1, lastyear = 20)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Graph for the state of New York for September 2021
